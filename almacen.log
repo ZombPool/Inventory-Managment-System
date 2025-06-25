@@ -1,0 +1,122 @@
+2025-06-17 14:23:11,659 - gui.pestanas - INFO - Workbook cargado exitosamente
+2025-06-17 14:23:11,779 - gui.pestanas - INFO - Cambios guardados exitosamente
+2025-06-17 14:28:55,836 - gui.pestanas - ERROR - Error al cargar todos los datos: 'ConsultaManager' object has no attribute 'tree'
+2025-06-17 14:29:57,818 - gui.pestanas - ERROR - Error al cargar todos los datos: max() iterable argument is empty
+2025-06-17 14:45:53,203 - gui.pestanas - ERROR - Error al cargar todos los datos: 'int' object is not iterable
+2025-06-17 15:28:08,597 - gui.pestanas - INFO - Workbook cargado exitosamente
+2025-06-17 15:28:08,640 - gui.pestanas - ERROR - Error al guardar: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-17 15:28:08,647 - gui.pestanas - ERROR - Error en guardar_ingreso: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-17 15:28:18,968 - gui.pestanas - INFO - Cambios guardados exitosamente
+2025-06-17 15:28:21,390 - gui.pestanas - INFO - Cambios guardados exitosamente
+2025-06-17 15:28:21,391 - gui.pestanas - INFO - Control de inventario actualizado correctamente
+2025-06-17 15:29:51,936 - gui.pestanas - ERROR - Error al cargar todos los datos: 'int' object is not iterable
+2025-06-17 15:29:59,230 - gui.pestanas - ERROR - Error al cargar todos los datos: 'int' object is not iterable
+2025-06-17 15:30:02,137 - gui.pestanas - ERROR - Error al cargar todos los datos: 'int' object is not iterable
+2025-06-17 15:38:26,041 - gui.pestanas - INFO - Workbook cargado exitosamente
+2025-06-17 15:38:26,145 - gui.pestanas - INFO - Cambios guardados exitosamente
+2025-06-17 15:38:26,145 - gui.pestanas - INFO - Control de inventario actualizado correctamente
+2025-06-17 15:38:26,219 - gui.pestanas - INFO - Cambios guardados exitosamente
+2025-06-17 15:54:32,062 - gui.pestanas - ERROR - Error al cargar todos los datos: 'int' object is not iterable
+2025-06-25 07:44:47,444 - gui.pestanas - INFO - Workbook loaded successfully.
+2025-06-25 07:44:47,479 - gui.pestanas - ERROR - Error saving: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 07:44:50,362 - gui.pestanas - ERROR - Error ensuring sheets exist: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 07:46:32,422 - gui.pestanas - ERROR - Error saving: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 07:46:38,304 - gui.pestanas - ERROR - Error updating inventory: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 702, in actualizar_inventario
+    self.excel_manager.save()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 126, in save
+    self._wb.save(self.archivo_excel)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1362, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 07:46:44,489 - gui.pestanas - ERROR - Error in guardar_ingreso: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 273, in guardar_ingreso
+    control_manager.actualizar_inventario() # This will ensure min/max are read if they exist
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 702, in actualizar_inventario
+    self.excel_manager.save()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 126, in save
+    self._wb.save(self.archivo_excel)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1362, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 07:46:47,144 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 07:46:47,144 - gui.pestanas - INFO - Control de inventario updated successfully.
+2025-06-25 07:46:47,215 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:46:34,902 - gui.pestanas - INFO - Workbook loaded successfully.
+2025-06-25 08:46:35,005 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:47:38,045 - gui.pestanas - INFO - New part 891-137 created in 'Ingresos de almacén' row 506.
+2025-06-25 08:47:38,123 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:47:38,123 - gui.pestanas - INFO - Control de inventario updated successfully.
+2025-06-25 08:47:38,198 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:49:47,548 - gui.pestanas - INFO - Existing part 891-137 updated in 'Ingresos de almacén' row 506. New quantity: 5
+2025-06-25 08:49:47,640 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:49:47,640 - gui.pestanas - INFO - Control de inventario updated successfully.
+2025-06-25 08:49:47,714 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:53:49,309 - gui.pestanas - ERROR - Error saving: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 08:53:51,440 - gui.pestanas - ERROR - Error updating inventory: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 739, in actualizar_inventario
+    self.excel_manager.save()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 131, in save
+    self._wb.save(self.archivo_excel)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1362, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 08:53:55,107 - gui.pestanas - ERROR - Error loading inventory: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 544, in mostrar_inventario
+    ControlInventarioManager(self.excel_manager).actualizar_inventario()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 739, in actualizar_inventario
+    self.excel_manager.save()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\gui\pestanas.py", line 131, in save
+    self._wb.save(self.archivo_excel)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\Paulo\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1362, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Paulo\\Documents\\DOCUMENTS EPCOMM\\Proyectos de automatización\\P-6. Administración a Almacén de equipos\\data\\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx'
+2025-06-25 08:54:30,464 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:54:30,465 - gui.pestanas - INFO - Control de inventario updated successfully.
+2025-06-25 08:54:30,549 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:54:36,464 - gui.pestanas - INFO - Changes saved successfully.
+2025-06-25 08:54:36,464 - gui.pestanas - INFO - Prediction of needs completed for 30 days.
+2025-06-25 08:54:50,789 - gui.pestanas - INFO - Inventory report generated.
+2025-06-25 09:00:51,415 - gui.pestanas - INFO - Backup creado en: C:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\data\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx_backup_20250625_090051.xlsx
+2025-06-25 09:01:11,802 - gui.pestanas - INFO - Backup creado en: C:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\data\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx_backup_20250625_090111.xlsx
+2025-06-25 09:02:05,763 - gui.pestanas - INFO - Backup creado en: C:\Users\Paulo\Documents\DOCUMENTS EPCOMM\Proyectos de automatización\P-6. Administración a Almacén de equipos\data\Sistema de Gestion en Almacén de Equipos y Herramientas.xlsx_backup_20250625_090205.xlsx
+2025-06-25 09:03:09,961 - gui.pestanas - INFO - Workbook loaded successfully.
+2025-06-25 09:03:10,063 - gui.pestanas - INFO - Changes saved successfully.
